@@ -1,6 +1,6 @@
 function myName(){
     var name = "Ogunmola Akinwumi";
-    return("name");
+    return(name);
 };
 
 myName();
