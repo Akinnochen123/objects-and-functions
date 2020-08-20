@@ -35,18 +35,23 @@ function displayEvenNumbers(){
 displayEvenNumbers();
 
 function returnFirstOddNumber(){
-    for(var i=0; i< numbers.length; i+=2);
-    return(numbers[i]);
+    for(var i=0; i< numbers.length; i+=2){
+        if( i > 0){
+          break;
+        }
+       return(numbers[i]);
+    }
+    
 };
 
 returnFirstOddNumber();
 
 function returnFirstEvenNumber(){
     for(var i=0; i< numbers.length; i++){
-    if (numbers[i] % 2 === 0){
-        return(numbers[i]);
+    if (numbers[i] % 2 === 0 && i > 0){
+       break;
     }   
-        
+       return(numbers[i]);  
     }
     
 };
